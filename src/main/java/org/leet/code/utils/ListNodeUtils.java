@@ -8,6 +8,9 @@ public class ListNodeUtils {
     }
 
     public static ListNode toListNode(int[] data) {
+        if (data.length == 0) {
+            return null;
+        }
         ListNode head = new ListNode(data[data.length - 1]);
         for (int i = data.length - 2; i >= 0; i--) {
             head = new ListNode(data[i], head);
