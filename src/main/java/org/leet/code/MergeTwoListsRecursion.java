@@ -1,0 +1,23 @@
+package org.leet.code;
+
+import org.leet.code.utils.ListNode;
+
+public class MergeTwoListsRecursion {
+
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null) return list2;
+        if (list2 == null) return list1;
+
+        var head = new ListNode();
+
+        if (list1.val < list2.val) {
+            head = list1;
+            list1 = list1.next;
+        } else {
+            head = list2;
+            list2 = list2.next;
+        }
+        head.next = mergeTwoLists(list1, list2);
+        return head;
+    }
+}
