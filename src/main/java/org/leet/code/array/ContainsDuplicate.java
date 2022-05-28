@@ -1,4 +1,4 @@
-package org.leet.code;
+package org.leet.code.array;
 
 import java.util.Arrays;
 import java.util.HashSet;

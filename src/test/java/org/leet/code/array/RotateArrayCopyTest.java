@@ -1,15 +1,16 @@
-package org.leet.code;
+package org.leet.code.array;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.leet.code.array.RotateArrayCopy;
 
 import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class RotateArrayStackTest {
-    private final RotateArrayStack service = new RotateArrayStack();
+class RotateArrayCopyTest {
+    private final RotateArrayCopy service = new RotateArrayCopy();
 
     @ParameterizedTest
     @MethodSource("provideData")

@@ -1,6 +1,7 @@
-package org.leet.code;
+package org.leet.code.array;
 
 import org.junit.jupiter.api.Test;
+import org.leet.code.array.RemoveDuplicatesSortedArray;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
