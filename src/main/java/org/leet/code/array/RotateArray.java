@@ -1,6 +1,21 @@
 package org.leet.code.array;
 
+import java.util.Arrays;
+
 public class RotateArray {
+
+
+    public void myRotate(int[] nums, int k) {
+        int newSize = k % nums.length;
+        int rotateIndex = nums.length - newSize;
+        final int[] prefixArray = Arrays.copyOfRange(nums, rotateIndex, nums.length);
+
+        for (int r = rotateIndex - 1, j = nums.length - 1; r >= 0; r--, j--) {
+            nums[j] = nums[r];
+        }
+        System.arraycopy(prefixArray, 0, nums, 0, newSize);
+    }
+
 
     public void rotate(int[] nums, int k) {
         int steps = k;

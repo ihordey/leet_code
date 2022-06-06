@@ -15,7 +15,7 @@ class RotateArrayTest {
     @ParameterizedTest
     @MethodSource("provideData")
     void rotateArray(int[] data, int steps, int[] expectedResult) {
-        service.rotate(data, steps);
+        service.myRotate(data, steps);
 
         assertThat(data)
                 .containsExactly(expectedResult);
