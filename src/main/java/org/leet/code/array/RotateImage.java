@@ -20,7 +20,8 @@ public class RotateImage {
 
     private void reflect(int[][] matrix) {
         final int matrixLength = matrix.length;
-        final int middle = matrixLength / 2 + matrixLength % 2;
+//        final int middle = matrixLength / 2 + matrixLength % 2;
+        final int middle = matrixLength / 2; //TODO think about it when implement ReverseString.java
 
         for (int r = 0; r < matrixLength; r++) {
             for (int lr = 0, rl = matrixLength - 1; lr < middle && rl >= middle; lr++, rl--) {
